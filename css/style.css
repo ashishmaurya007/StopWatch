@@ -1,0 +1,150 @@
+/* no select class */
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                   supported by Chrome, Edge, Opera and Firefox */
+  }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top:20px;
+    height: 70%;
+    background-image: linear-gradient(to right, #a8c0ff, #3f2b96);   
+}
+/* header */
+#head{
+    
+    font-size: 2.5rem;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bolder;
+    text-align: center;
+}
+/* main-content */
+#content{
+   
+    text-align: center;
+    
+}
+
+/* timer */
+#timer{
+    font-size: 5em;
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+
+#timer div{
+ color:whitesmoke;
+}
+
+/* content footer section  */
+#content-footer{
+   
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+}
+#content-footer::-webkit-scrollbar {
+    display: none;
+}
+/* clear button  */
+#content-footer button{
+    position: absolute;
+    right: 30%;
+    top: 330px;
+    background-color: beige;
+    color: black;
+    font-weight: 500;
+    visibility: hidden;
+}
+#bottum-section{
+
+    width:auto;
+    height: 350px;
+    justify-content: center;
+}
+/* button section css */
+#button{
+   
+    justify-content: space-between;
+
+}
+
+button {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 15px;
+    -khtml-border-radius: 5px;
+    background: #f4511e;
+    color: #fff;
+    border: solid 1px #fff;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.6;
+    font-size: 1.2em;
+    width: 80px;
+    margin: 9px;
+    outline: none;
+  }
+  button:hover {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background: #f4511e;
+    opacity: 1;
+    border: solid 1px #fff;
+    color: #fff;
+  }
+  #btnStop{
+      visibility: hidden;
+     
+  }
+  #btnReset{
+      visibility: hidden;
+  }
+  /* lap section  */
+#lap-container{
+    
+    width:auto;
+    height:292px;
+}
+
+#laps{
+    display: inline-block;
+    text-align: left;
+}
+
+#laps div{
+    font-size: 1.3em;
+    margin-bottom: 0.7em;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    padding: 6px 35px;
+    width:260px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: black 2px 2px
+}
+
+
+@media screen and (max-width: 1200px){
+    #content-footer button{
+        position: absolute;
+        right: 130px;
+        top: 580px;
+        background-color: beige;
+        border: 2px solid black;
+        color: black;
+        font-weight: 500;
+        visibility: hidden;
+    }
+}
+
+
